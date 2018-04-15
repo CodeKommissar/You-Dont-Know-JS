@@ -22,7 +22,7 @@ Por favor siéntete libre de contribuir a la calidad de este contenido enviando 
 * Leer online (gratis!): ["Async & Rendimiento"](async\%20&\%20performance/README.md#you-dont-know-js-async--performance), Publicación: [Comprar ahora](http://www.ebooks.com/1977375/you-don-t-know-js-async-performance/simpson-kyle/)
 * Leer online (gratis!): ["ES6 & Más Allá"](es6\%20&\%20beyond/README.md#you-dont-know-js-es6--beyond), Publicación: [Comprar ahora](http://www.ebooks.com/2481820/you-don-t-know-js-es6-beyond/simpson-kyle/)
 
-## Publicando
+## Publicación
 
 Estos libros se publican aquí como borradores, de forma gratuita, pero también son editados, producidos y publicados a través de O'Reilly.
 

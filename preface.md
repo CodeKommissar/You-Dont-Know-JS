@@ -1,40 +1,40 @@
-# You Don't Know JS
-# Preface
+# Tu No Sabes JS
+# Prefacio
 
-I'm sure you noticed, but "JS" in the book series title is not an abbreviation for words used to curse about JavaScript, though cursing at the language's quirks is something we can probably all identify with!
+Estoy seguro de que lo notaste, pero el "JS" en el título de esta serie de libros no es una abreviación de las palabras usadas para maldecir acerca de JavaScript, aunque maldecir acerca de las peculiaridades del idioma es algo con lo que probablemente todos podamos identificarnos!
 
-From the earliest days of the web, JavaScript has been a foundational technology that drives interactive experience around the content we consume. While flickering mouse trails and annoying pop-up prompts may be where JavaScript started, nearly 2 decades later, the technology and capability of JavaScript has grown many orders of magnitude, and few doubt its importance at the heart of the world's most widely available software platform: the web.
+Desde los primeros días de la web, JavaScript ha sido una tecnología fundamental que impulsa la experiencia interactiva alrededor del contenido que consumimos. Aunque JavaScript comenzara con efectos parpadeantes que siguieran los rastros del mouse y molestas advertencias emergentes, casi dos décadas después, la tecnología y la capacidad de JavaScript ha crecido en muchas órdenes de magnitud, y pocos dudan de su importancia en el corazón de la plataforma de software más ampliamente disponible en el mundo: La web.
 
-But as a language, it has perpetually been a target for a great deal of criticism, owing partly to its heritage but even more to its design philosophy. Even the name evokes, as Brendan Eich once put it, "dumb kid brother" status next to its more mature older brother "Java". But the name is merely an accident of politics and marketing. The two languages are vastly different in many important ways. "JavaScript" is as related to "Java" as "Carnival" is to "Car".
+Pero como lenguaje, ha sido objeto constante de una gran cantidad de críticas, debido en parte a su herencia pero aún más debido a la filosofía detras de su diseño. Incluso el nombre evoca, como dijo una vez Brendan Eich, el estado de "hermano tonto" al lado de su hermano mayor más maduro "Java". Pero el nombre es simplemente un accidente de política y marketing. Los dos lenguajes son ampliamente diferentes en muchas formas importantes. "JavaScript" está relacionado con "Java", tanto como "Maraca" esta relacionado a "Mar".
 
-Because JavaScript borrows concepts and syntax idioms from several languages, including proud C-style procedural roots as well as subtle, less obvious Scheme/Lisp-style functional roots, it is exceedingly approachable to a broad audience of developers, even those with just little to no programming experience. The "Hello World" of JavaScript is so simple that the language is inviting and easy to get comfortable with in early exposure.
+Debido a que JavaScript toma prestados conceptos y sintaxis idiomáticas de varios lenguajes, incluidas orgullosas raíces de de estilo C procedural, así como raíces sutiles y menos obvias provenientes de Scheme/Lisp con un estilo funcional, es extremadamente accesible para una amplia audiencia de programadores, incluso aquellos con poca experiencia en el mundo de la programación. El "Hola Mundo" de JavaScript es tan simple que el lenguaje es atractivo y fácil de ponerse cómodo en la exposición temprana.
 
-While JavaScript is perhaps one of the easiest languages to get up and running with, its eccentricities make solid mastery of the language a vastly less common occurrence than in many other languages. Where it takes a pretty in-depth knowledge of a language like C or C++ to write a full-scale program, full-scale production JavaScript can, and often does, barely scratch the surface of what the language can do.
+Si bien JavaScript es quizás uno de los idiomas más fáciles de usar, sus excentricidades hacen que un dominio sólido del lenguaje sea mucho menos común que en muchos otros idiomas. Cuando se necesita un conocimiento bastante profundo de un lenguaje como C o C++ para escribir un programa a gran escala, la versión en JavaScript de producción a gran escala puede, y a menudo lo hace, apenas arañar la superficie de lo que el lenguaje puede hacer.
 
-Sophisticated concepts which are deeply rooted into the language tend instead to surface themselves in *seemingly* simplistic ways, such as passing around functions as callbacks, which encourages the JavaScript developer to just use the language as-is and not worry too much about what's going on under the hood.
+Los conceptos sofisticados que están profundamente arraigados en el lenguaje tienden a aparecer en formas *aparentemente* simples, tal y como pasar funciones como devoluciones de llamada, lo que anima al desarrollador de JavaScript a usar el lenguaje tal y como es y no preocuparse demasiado por lo que esta sucediendo bajo el capó.
 
-It is simultaneously a simple, easy-to-use language that has broad appeal, and a complex and nuanced collection of language mechanics which without careful study will elude *true understanding* even for the most seasoned of JavaScript developers.
+Es a la vez un lenguaje simple y fácil de usar que tiene un atractivo amplio, y a la vez es una colección compleja y matizada de mecánicas de lenguaje que sin un estudio cuidadoso eludirá la *verdadera comprensión* incluso para los desarrolladores de JavaScript más experimentados.
 
-Therein lies the paradox of JavaScript, the Achilles' Heel of the language, the challenge we are presently addressing. Because JavaScript *can* be used without understanding, the understanding of the language is often never attained.
+Ahí radica la paradoja de JavaScript, el talón de Aquiles del lenguaje, el desafío al que nos enfrentamos actualmente. Debido a que JavaScript *puede* usarse sin comprenderlo, la comprensión del lenguaje a menudo nunca se alcanza.
 
-## Mission
+## Misión
 
-If at every point that you encounter a surprise or frustration in JavaScript, your response is to add it to the blacklist, as some are accustomed to doing, you soon will be relegated to a hollow shell of the richness of JavaScript.
+Si en cada punto que encuentras una sorpresa o frustración en JavaScript, tu respuesta es agregarla a la lista negra, como algunos están acostumbrados a hacer, pronto quedarás relegado a un exterior vacío de la riqueza de JavaScript.
 
-While this subset has been famously dubbed "The Good Parts", I would implore you, dear reader, to instead consider it the "The Easy Parts", "The Safe Parts", or even "The Incomplete Parts".
+Si bien este subconjunto ha sido conocido como "Las Partes Buenas", te imploro, querido lector, que en vez las consideres "Las Partes Faciles", "Las Partes Seguras", o incluso "Las Partes Incompletas".
 
-This *You Don't Know JavaScript* book series offers a contrary challenge: learn and deeply understand *all* of JavaScript, even and especially "The Tough Parts".
+Esta serie de libros llamada *Tu No Sabes JavaScript* ofrece un desafío contrario: aprender y comprender profundamente *todo* acerca de JavaScript, incluso y especialmente "Las Partes Dificiles".
 
-Here, we address head on the tendency of JS developers to learn "just enough" to get by, without ever forcing themselves to learn exactly how and why the language behaves the way it does. Furthermore, we eschew the common advice to *retreat* when the road gets rough.
+Aquí, abordamos la tendencia de los desarrolladores de JS a aprender "justo lo suficiente" para salir del paso, sin forzarse nunca a aprender exactamente cómo y por qué el lenguaje se comporta de la manera en que lo hace. Además, evitaremos el consejo común de *retirarse* cuando el camino se pone difícil.
 
-I am not content, nor should you be, at stopping once something *just works*, and not really knowing *why*. I gently challenge you to journey down that bumpy "road less traveled" and embrace all that JavaScript is and can do. With that knowledge, no technique, no framework, no popular buzzword acronym of the week, will be beyond your understanding.
+No estoy contento, ni deberías estarlo tu, al parar una vez que algo *simplemente funciona*, sin saber realmente *por qué*. Te desafío gentilmente a que viajes por ese "camino menos transitado" lleno de baches y aceptes todo lo que JavaScript puede hacer. Con ese conocimiento, ninguna técnica, ningún framework, ningún acrónimo popular de la semana, estara más allá de tu comprensión.
 
-These books each take on specific core parts of the language which are most commonly misunderstood or under-understood, and dive very deep and exhaustively into them. You should come away from reading with a firm confidence in your understanding, not just of the theoretical, but the practical "what you need to know" bits.
+Cada uno de estos libros se concentra en partes centrales específicas del lenguaje que comúnmente se malinterpretan o no se entienden, y se sumerge de manera profunda y exhaustiva en ellas. Deberias terminar de leer con una confianza firme en tu comprensión, no solo en los teórico, sino en los pedazos prácticos de "lo que necesitas saber".
 
-The JavaScript you know *right now* is probably *parts* handed down to you by others who've been burned by incomplete understanding. *That* JavaScript is but a shadow of the true language. You don't *really* know JavaScript, *yet*, but if you dig into this series, you *will*. Read on, my friends. JavaScript awaits you.
+El JavaScript que conoces *en este momento* probablemente sean *partes* entregados a ti por otros que han sido quemados por una comprensión incompleta. *Ese* JavaScript no es más que una sombra del verdadero lenguaje. *Realmente* aun no sabes JavaScript, *por ahora*, pero si profundizas en esta serie, lo *haras*. Sigan leyendo, mis amigos. JavaScript los espera.
 
-## Summary
+## Resumen
 
-JavaScript is awesome. It's easy to learn partially, and much harder to learn completely (or even *sufficiently*). When developers encounter confusion, they usually blame the language instead of their lack of understanding. These books aim to fix that, inspiring a strong appreciation for the language you can now, and *should*, deeply *know*.
+JavaScript es asombroso. Es fácil aprenderlo parcialmente, y es mucho más difícil aprenderlo por completo (o incluso *suficientemente*). Cuando los desarrolladores encuentran confusión, generalmente culpan al lenguaje en lugar de su falta de comprensión. Estos libros pretenden solucionar eso, inspirando una gran apreciación del lenguaje que ahora puedes, y *deberias*, profundamente *conocer*.
 
-Note: Many of the examples in this book assume modern (and future-reaching) JavaScript engine environments, such as ES6. Some code may not work as described if run in older (pre-ES6) engines.
+Nota: Muchos de los ejemplos de este libro asumen entornos de motores de JavaScript modernos (y de alcance futuro), como ES6. Es posible que algunos códigos no funcionen como se describe aqui si se ejecutan en motores más antiguos (anteriores a ES6).

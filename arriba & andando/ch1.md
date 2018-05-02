@@ -1,102 +1,102 @@
-# You Don't Know JS: Up & Going
-# Chapter 1: Into Programming
+# Tu No Sabes JS: Arriba & Andando
+# Capítulo 1: En La Programación
 
-Welcome to the *You Don't Know JS* (*YDKJS*) series.
+Bienvenido a la serie *Tu No Sabes JS* (*TNSJS*).
 
-*Up & Going* is an introduction to several basic concepts of programming -- of course we lean toward JavaScript (often abbreviated JS) specifically -- and how to approach and understand the rest of the titles in this series. Especially if you're just getting into programming and/or JavaScript, this book will briefly explore what you need to get *up and going*.
+*Arriba & Andando* es una introducción a varios conceptos básicos de la programación -- por supuesto, nos inclinaremos mas por JavaScript (a menudo abreviado JS) específicamente -- y cómo abordar y comprender el resto de los títulos en esta serie. Especialmente, si apenas estas ingresando al mundo de la programación y/o JavaScript, este libro explorará brevemente lo qué necesitas para ponerte *arriba y andando*.
 
-This book starts off explaining the basic principles of programming at a very high level. It's mostly intended if you are starting *YDKJS* with little to no prior programming experience, and are looking to these books to help get you started along a path to understanding programming through the lens of JavaScript.
+Este libro comienza explicando los principios básicos de la programación desde un nivel bastante alto. Está principal propósito es si estas comenzando *TNSJS* con poca o ninguna experiencia de programación previa, y estás mirando hacia estos libros para ayudarte a comenzar a lo largo de un camino hacia la comprensión de la programación a través del lente de JavaScript.
 
-Chapter 1 should be approached as a quick overview of the things you'll want to learn more about and practice to get *into programming*. There are also many other fantastic programming introduction resources that can help you dig into these topics further, and I encourage you to learn from them in addition to this chapter.
+El Capítulo 1 debe abordarse como una rápida descripción general de las cosas que sobre las que querrás aprender más y practicar para meterte *en la programación*. También hay muchos otros recursos fantásticos de introducción a la programación que pueden ayudarte a profundizar en estos temas, y te aliento a que aprendas de ellos en adición a este capítulo.
 
-Once you feel comfortable with general programming basics, Chapter 2 will help guide you to a familiarity with JavaScript's flavor of programming. Chapter 2 introduces what JavaScript is about, but again, it's not a comprehensive guide -- that's what the rest of the *YDKJS* books are for!
+Una vez que te sientas cómodo con los conceptos básicos de la programación en general, el Capítulo 2 te ayudará a familiarizarte con el sabor de la programación en JavaScript. El Capítulo 2 es una introducción acerca de qué trata JavaScript, pero una vez más, no es una guía completa -- para eso son el resto de los libros en *TNSJS*!
 
-If you're already fairly comfortable with JavaScript, first check out Chapter 3 as a brief glimpse of what to expect from *YDKJS*, then jump right in!
+Si ya te sientes bastante cómodo con JavaScript, chequea primero al Capítulo 3 como un breve vistazo de qué puedes esperar de *TNSJS*, y luego salta directamente!
 
-## Code
+## Código
 
-Let's start from the beginning.
+Vamos a empezar desde el principio.
 
-A program, often referred to as *source code* or just *code*, is a set of special instructions to tell the computer what tasks to perform. Usually code is saved in a text file, although with JavaScript you can also type code directly into a developer console in a browser, which we'll cover shortly.
+Un programa, a menudo denominado *código fuente* o simplemente *código*, es un conjunto de instrucciones especiales que le indican a la computadora qué tareas debe realizar. Por lo general, el código se guarda en un archivo de texto, aunque con JavaScript también puedes escribir el código directamente en una consola de desarrollador en un navegador, la cual veremos en breve.
 
-The rules for valid format and combinations of instructions is called a *computer language*, sometimes referred to as its *syntax*, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.
+Las reglas para las combinaciones de instrucciones validás y el formato en general del código son llamadas un *lenguaje informático*, y a veces denominadas como su *sintaxis*, muy parecido a como el español te indica cómo deletrear palabras y cómo crear oraciones válidas utilizando palabras y signos de puntuación.
 
-### Statements
+### Declaraciones
 
-In a computer language, a group of words, numbers, and operators that performs a specific task is a *statement*. In JavaScript, a statement might look as follows:
-
-```js
-a = b * 2;
-```
-
-The characters `a` and `b` are called *variables* (see "Variables"), which are like simple boxes you can store any of your stuff in. In programs, variables hold values (like the number `42`) to be used by the program. Think of them as symbolic placeholders for the values themselves.
-
-By contrast, the `2` is just a value itself, called a *literal value*, because it stands alone without being stored in a variable.
-
-The `=` and `*` characters are *operators* (see "Operators") -- they perform actions with the values and variables such as assignment and mathematic multiplication.
-
-Most statements in JavaScript conclude with a semicolon (`;`) at the end.
-
-The statement `a = b * 2;` tells the computer, roughly, to get the current value stored in the variable `b`, multiply that value by `2`, then store the result back into another variable we call `a`.
-
-Programs are just collections of many such statements, which together describe all the steps that it takes to perform your program's purpose.
-
-### Expressions
-
-Statements are made up of one or more *expressions*. An expression is any reference to a variable or value, or a set of variable(s) and value(s) combined with operators.
-
-For example:
+En un lenguaje informático, un grupo de palabras, números y operadores que realiza una tarea específica es una *declaración*. En JavaScript, una declaración puede verse de la siguiente manera:
 
 ```js
 a = b * 2;
 ```
 
-This statement has four expressions in it:
+Los caracteres `a` y `b` se llaman *variables* (ver "Variables"), que son como simples cajas en las cuales puedes almacenar cualquiera de tus cosas. En los programas, las variables contienen valores (como el número `42`) que seran utilizados por el programa. Piensa en ellas como marcadores simbólicos de los valores en si mismos.
 
-* `2` is a *literal value expression*
-* `b` is a *variable expression*, which means to retrieve its current value
-* `b * 2` is an *arithmetic expression*, which means to do the multiplication
-* `a = b * 2` is an *assignment expression*, which means to assign the result of the `b * 2` expression to the variable `a` (more on assignments later)
+Por el contrario, el `2` es solo un valor en sí mismo, llamado un *valor literal*, porque está solo sin estar almacenado en una variable.
 
-A general expression that stands alone is also called an *expression statement*, such as the following:
+Los caracteres `=` y `*` son *operadores* (ver "Operadores") -- realizan acciones con los valores y variables tales como la asignación y la multiplicación matemática.
+
+La mayoría de las declaraciones en JavaScript concluyen con un punto y coma (`;`) al final.
+
+La declaración `a = b * 2;` le dice a la computadora, aproximadamente, que obtenga el valor actual almacenado en la variable `b`, multiplica ese valor por `2`, y luego almacena el resultado en otra variable a la que llamaremos `a`.
+
+Los programas son solo colecciones de muchas declaraciones de este tipo, que juntas describen todos los pasos necesarios para llevar a cabo el propósito de tu programa.
+
+### Expresiones
+
+Las declaraciones se componen de una o más *expresiones*. Una expresión es cualquier referencia a una variable o valor, o un conjunto de variable(s) y valor(es) combinados con operadores.
+
+Por ejemplo:
+
+```js
+a = b * 2;
+```
+
+Esta declaración tiene cuatro expresiones en ella:
+
+* `2` es una *expresión de valor literal*
+* `b` es una *expresión variable*, lo que significa obtener su valor actual
+* `b * 2` es una *expresión aritmética*, que significa hacer la multiplicación
+* `a = b * 2` es una *expresión de asignación*, lo que significa asignar el resultado de la expresión `b * 2` a la variable `a` (más sobre acerca de las asignaciones más adelante)
+
+Una expresión general independiente es también llamada *expresión de declaración*, como la siguiente:
 
 ```js
 b * 2;
 ```
 
-This flavor of expression statement is not very common or useful, as generally it wouldn't have any effect on the running of the program -- it would retrieve the value of `b` and multiply it by `2`, but then wouldn't do anything with that result.
+Esta forma de expresión de declaración no es muy común ni útil, ya que generalmente no tendría ningún efecto en la ejecución del programa -- obtendría el valor de `b` y lo multiplicaría por `2`, pero luego no haría nada con ese resultado.
 
-A more common expression statement is a *call expression* statement (see "Functions"), as the entire statement is the function call expression itself:
+Una expresión de declaración más común es una declaración de *expresión de llamada* (ver "Funciones"), ya que toda la declaración es la expresión de llamada a la función en sí:
 
 ```js
 alert( a );
 ```
 
-### Executing a Program
+### Ejecutando un programa
 
-How do those collections of programming statements tell the computer what to do? The program needs to be *executed*, also referred to as *running the program*.
+Cómo le dicen esas colecciones de declaraciones de programación a la computadora qué hacer? El programa debe *ejecutarse*, también referido como *ejecutar el programa*.
 
-Statements like `a = b * 2` are helpful for developers when reading and writing, but are not actually in a form the computer can directly understand. So a special utility on the computer (either an *interpreter* or a *compiler*) is used to translate the code you write into commands a computer can understand.
+Las declaraciones como `a = b * 2` son útiles para los desarrolladores al leer y escribir, pero en realidad no están en una forma que la computadora pueda comprender directamente. Por lo tanto, se usa una utilidad especial en la computadora (ya sea un *intérprete* o un *compilador*) para traducir el código que se escribe a comandos que una computadora puede entender.
 
-For some computer languages, this translation of commands is typically done from top to bottom, line by line, every time the program is run, which is usually called *interpreting* the code.
+Para algunos lenguajes de computadora, esta traducción de comandos generalmente se realiza de arriba a abajo, línea por línea, cada vez que se ejecuta el programa, lo que generalmente se conoce como *interpretación* del código.
 
-For other languages, the translation is done ahead of time, called *compiling* the code, so when the program *runs* later, what's running is actually the already compiled computer instructions ready to go.
+Para otros idiomas, la traducción se realiza de antemano, lo que se conoce como *compilar* el código, por lo que cuando el programa *se ejecuta* más tarde, lo que se está ejecutando es en realidad las instrucciones de la computadora ya compiladas listas para funcionar.
 
-It's typically asserted that JavaScript is *interpreted*, because your JavaScript source code is processed each time it's run. But that's not entirely accurate. The JavaScript engine actually *compiles* the program on the fly and then immediately runs the compiled code.
+Por lo general, se afirma que JavaScript es *interpretado*, porque el código fuente de JavaScript se procesa cada vez que se ejecuta. Pero eso no es del todo exacto. El motor JavaScript en realidad *compila* el programa sobre la marcha y luego ejecuta inmediatamente el código compilado.
 
-**Note:** For more information on JavaScript compiling, see the first two chapters of the *Scope & Closures* title of this series.
+**Nota:** Para obtener más información sobre compilación de JavaScript, consulta los dos primeros capítulos del título *Alcance & Cierres* de esta serie.
 
-## Try It Yourself
+## Inténtalo Tú Mismo
 
-This chapter is going to introduce each programming concept with simple snippets of code, all written in JavaScript (obviously!).
+Este capítulo presentará cada concepto de programación con simples fragmentos de código, todo escrito en JavaScript (obviamente!).
 
-It cannot be emphasized enough: while you go through this chapter -- and you may need to spend the time to go over it several times -- you should practice each of these concepts by typing the code yourself. The easiest way to do that is to open up the developer tools console in your nearest browser (Firefox, Chrome, IE, etc.).
+No puede ser enfatizado lo suficiente: mientras lees este capítulo -- y es posible que debas dedicar tiempo a repasarlo varias veces -- debes practicar cada uno de estos conceptos escribiendo el código por ti mismo. La forma más fácil de hacerlo es abrir la consola de herramientas de desarrollador en tu navegador más cercano (Firefox, Chrome, IE, etc.).
 
-**Tip:** Typically, you can launch the developer console with a keyboard shortcut or from a menu item. For more detailed information about launching and using the console in your favorite browser, see "Mastering The Developer Tools Console" (http://blog.teamtreehouse.com/mastering-developer-tools-console). To type multiple lines into the console at once, use `<shift> + <enter>` to move to the next new line. Once you hit `<enter>` by itself, the console will run everything you've just typed.
+**Consejo:** Normalmente, puedes iniciar la consola de desarrollador con un atajo de teclado o desde un elemento de menú. Para obtener información más detallada sobre cómo iniciar y utilizar la consola en tu navegador favorito, consulte "Mastering The Developer Tools Console" (http://blog.teamtreehouse.com/mastering-developer-tools-console) (en inglés). Para escribir varias líneas en la consola a la vez, usa `<shift> + <enter>` para pasar a la siguiente nueva línea. Una vez que presionas la tecla `<enter>` por sí misma, la consola ejecutará todo lo que acabas de escribir.
 
-Let's get familiar with the process of running code in the console. First, I suggest opening up an empty tab in your browser. I prefer to do this by typing `about:blank` into the address bar. Then, make sure your developer console is open, as we just mentioned.
+Vamos a familiarizarnos con el proceso de ejecutar código en la consola. Primero, sugiero que abras una pestaña vacía en tu navegador. Yo prefiero hacer esto escribiendo `about:blank` en la barra de direcciones. Luego, asegúrate de que tu consola de desarrollador esté abierta, como acabamos de mencionar.
 
-Now, type this code and see how it runs:
+Ahora, escribe este código y ve cómo se ejecuta:
 
 ```js
 a = 21;
@@ -106,80 +106,80 @@ b = a * 2;
 console.log( b );
 ```
 
-Typing the preceding code into the console in Chrome should produce something like the following:
+Escribir el código anterior en la consola de Google Chrome debería producir algo como lo siguiente:
 
 <img src="fig1.png" width="500">
 
-Go on, try it. The best way to learn programming is to start coding!
+Vamos, pruébalo. La mejor forma de aprender a programar es comenzar a practicar!
 
-### Output
+### Salidas
 
-In the previous code snippet, we used `console.log(..)`. Briefly, let's look at what that line of code is all about.
+En el fragmento de código anterior, usamos `console.log (..)`. Brevemente, veamos de qué se trata esa línea de código.
 
-You may have guessed, but that's exactly how we print text (aka *output* to the user) in the developer console. There are two characteristics of that statement that we should explain.
+Es posible que ya lo hayas adivinado, pero así es exactamente como imprimimos texto (también conocido como *salida* para el usuario) en la consola de desarrollador. Hay dos características de esa declaración que deberiamos de explicar.
 
-First, the `log( b )` part is referred to as a function call (see "Functions"). What's happening is we're handing the `b` variable to that function, which asks it to take the value of `b` and print it to the console.
+Primero, la parte `log( b )` se conoce como una llamada a función (ver "Funciones"). Lo que sucede es que le estamos entregando la variable `b` a esa función, que pide tomar el valor de `b` y lo imprime en la consola.
 
-Second, the `console.` part is an object reference where the `log(..)` function is located. We cover objects and their properties in more detail in Chapter 2.
+En segundo lugar, la parte `console` es una referencia de objeto a donde se encuentra la función `log(..)`. Cubriremos los objetos y sus propiedades con más detalle en el Capítulo 2.
 
-Another way of creating output that you can see is to run an `alert(..)` statement. For example:
+Otra forma de crear salidas que puedas ver es ejecutar una declaracón `alert(..)`. Por ejemplo:
 
 ```js
 alert( b );
 ```
 
-If you run that, you'll notice that instead of printing the output to the console, it shows a popup "OK" box with the contents of the `b` variable. However, using `console.log(..)` is generally going to make learning about coding and running your programs in the console easier than using `alert(..)`, because you can output many values at once without interrupting the browser interface.
+Si ejecuta eso, notarás que en lugar de imprimir la salida en la consola, muestra un cuadro emergente "OK" con el contenido de la variable `b`. Sin embargo, usar `console.log(..)` generalmente hará que aprender sobre la codificación y ejecutar programas en la consola sea más fácil que usar `alert(..)`, ya que puede mostrar muchos valores a la vez sin interrumpir la interfaz de navegador.
 
-For this book, we'll use `console.log(..)` for output.
+Para este libro, usaremos `console.log (..)` para las salidas.
 
-### Input
+### Entradas
 
-While we're discussing output, you may also wonder about *input* (i.e., receiving information from the user).
+Mientras hablamos de lo que son las salidas, también puedes preguntarte acerca de las *entradas* (es decir, recibir información por parte del usuario).
 
-The most common way that happens is for the HTML page to show form elements (like text boxes) to a user that they can type into, and then using JS to read those values into your program's variables.
+La forma más común de que esto suceda es que la página HTML muestre elementos de formulario (como cuadros de texto) en los que el usuario pueda escribir, y luego usar JS para leer esos valores en las variables de tu programa.
 
-But there's an easier way to get input for simple learning and demonstration purposes such as what you'll be doing throughout this book. Use the `prompt(..)` function:
+Pero hay una forma más fácil de obtener entradas para el aprendizaje simple y propósitos de demostración, como lo que harás a lo largo de este libro. Usa la función `prompt(..)`:
 
 ```js
-age = prompt( "Please tell me your age:" );
+edad = prompt( "Por favor dime tu edad:" );
 
-console.log( age );
+console.log( edad );
 ```
 
-As you may have guessed, the message you pass to `prompt(..)` -- in this case, `"Please tell me your age:"` -- is printed into the popup.
+Como puedes haber adivinado, el mensaje que pasas a `prompt(..)` -- en este caso, `"Por favor dime tu edad:"` -- se imprime en la ventana emergente.
 
-This should look similar to the following:
+Esto debería ser similar a lo siguiente:
 
 <img src="fig2.png" width="500">
 
-Once you submit the input text by clicking "OK," you'll observe that the value you typed is stored in the `age` variable, which we then *output* with `console.log(..)`:
+Una vez que entregues el texto de entrada en la ventana emergente haciendo clic en "OK", observaras que el valor que escribiste está almacenado en la variable `edad`, que luego mostramos como *salida* con `console.log(..)`:
 
 <img src="fig3.png" width="500">
 
-To keep things simple while we're learning basic programming concepts, the examples in this book will not require input. But now that you've seen how to use `prompt(..)`, if you want to challenge yourself you can try to use input in your explorations of the examples.
+Para mantener las cosas simples mientras aprendemos conceptos básicos de la programación, los ejemplos de este libro no requerirán entradas. Pero ahora que has visto cómo usar `prompt(..)`, si quieres desafiarte a ti mismo, puedes intentar utilizar entradas en tus exploraciones de los ejemplos.
 
-## Operators
+## Operadores
 
-Operators are how we perform actions on variables and values. We've already seen two JavaScript operators, the `=` and the `*`.
+Los operadores son la forma en que realizamos acciones sobre variables y valores. Ya hemos visto dos operadores en JavaScript, el `=` y el `*`.
 
-The `*` operator performs mathematic multiplication. Simple enough, right?
+El operador `*` realiza la multiplicación matemática. Simple, verdad?
 
-The `=` equals operator is used for *assignment* -- we first calculate the value on the *right-hand side* (source value) of the `=` and then put it into the variable that we specify on the *left-hand side* (target variable).
+El operador `=` igual se usa para la *asignación* -- primero calculamos el valor en el *lado derecho* (valor fuente) del `=` y luego lo ponemos en la variable que especificamos en el *lado izquierdo* (variable objetivo).
 
-**Warning:** This may seem like a strange reverse order to specify assignment. Instead of `a = 42`, some might prefer to flip the order so the source value is on the left and the target variable is on the right, like `42 -> a` (this is not valid JavaScript!). Unfortunately, the `a = 42` ordered form, and similar variations, is quite prevalent in modern programming languages. If it feels unnatural, just spend some time rehearsing that ordering in your mind to get accustomed to it.
+**Advertencia:** Este puede parecer un extraño orden inverso para especificar la asignación. En lugar de `a = 42`, algunos podrían preferir voltear el orden de modo que el valor fuente esté a la izquierda y la variable objetivo esté a la derecha, como `42 -> a` (esto no es JavaScript válido!). Desafortunadamente, la forma de orden `a = 42`, y variaciones similares, es bastante frecuente en los lenguajes de programación modernos. Si no se siente natural, dedica un tiempo a practicar ese orden en tu mente para acostumbrarte a él.
 
-Consider:
+Considera:
 
 ```js
 a = 2;
 b = a + 1;
 ```
 
-Here, we assign the `2` value to the `a` variable. Then, we get the value of the `a` variable (still `2`), add `1` to it resulting in the value `3`, then store that value in the `b` variable.
+Aquí, asignamos el valor `2` a la variable `a`. Entonces, obtenemos el valor de la variable `a` (aún `2`) y le agregamos `1`, lo que da como resultado el valor `3`, luego almacenamos ese valor en la variable `b`.
 
-While not technically an operator, you'll need the keyword `var` in every program, as it's the primary way you *declare* (aka *create*) *var*iables (see "Variables").
+Si bien técnicamente no es un operador, necesitarás usar la palabra clave `var` en cada programa, ya que es la forma principal en que *declaras* (en otras palabras, *creas*) *var*iables (consulta "Variables").
 
-You should always declare the variable by name before you use it. But you only need to declare a variable once for each *scope* (see "Scope"); it can be used as many times after that as needed. For example:
+Siempre deberias declarar la variable por su nombre antes de usarla. Pero solo necesitas declarar una variable una vez por cada *alcance* (ver "Alcance"); después de eso puede usarse tantas veces como sea necesaria. Por ejemplo:
 
 ```js
 var a = 20;
@@ -190,50 +190,50 @@ a = a * 2;
 console.log( a );	// 42
 ```
 
-Here are some of the most common operators in JavaScript:
+Estos son algunos de los operadores más comunes en JavaScript:
 
-* Assignment: `=` as in `a = 2`.
-* Math: `+` (addition), `-` (subtraction), `*` (multiplication), and `/` (division), as in `a * 3`.
-* Compound Assignment: `+=`, `-=`, `*=`, and `/=` are compound operators that combine a math operation with assignment, as in `a += 2` (same as `a = a + 2`).
-* Increment/Decrement: `++` (increment), `--` (decrement), as in `a++` (similar to `a = a + 1`).
-* Object Property Access: `.` as in `console.log()`.
+* Asignación: `=` como en `a = 2`.
+* Matemáticas: `+` (adición), `-` (substracción), `*` (multiplicación) y `/` (división), como en `a * 3`.
+* Asignación Compuesta: `+=`, `-=`, `*=`, y `/=` son operadores compuestos que combinan una operación matemática con asignación, como en `a += 2` (es lo mismo que `a = a + 2`).
+* Incremento/Decremento: `++` (incremento), `--`(decremento), como en `a++` (similar a `a = a + 1`).
+* Acceso a la Propiedad del Objeto: `.` como en `console.log()`.
 
-   Objects are values that hold other values at specific named locations called properties. `obj.a` means an object value called `obj` with a property of the name `a`. Properties can alternatively be accessed as `obj["a"]`. See Chapter 2.
-* Equality: `==` (loose-equals), `===` (strict-equals), `!=` (loose not-equals), `!==` (strict not-equals), as in `a == b`.
+   Los objetos son valores que contienen otros valores en ubicaciones con nombres específicos llamadas propiedades. `obj.a` significa un valor de objeto llamado `obj` con una propiedad con el nombre `a`. Alternativamente las propiedades se puede acceder como `obj["a"]`. Ver el Capítulo 2.
+* Igualdad: `==` (igualdad-permisiva), `===` (igualdad-estricta), `!=` (no-igualdad permisiva), `!==` (no-igualdad estricta), como en `a == b`.
 
-   See "Values & Types" and Chapter 2.
-* Comparison: `<` (less than), `>` (greater than), `<=` (less than or loose-equals), `>=` (greater than or loose-equals), as in `a <= b`.
+   Consulta "Valores & Tipos" y el Capítulo 2.
+* Comparación: `<` (menor que), `>` (mayor que), `<=` (menor que o igualdad-permisiva), `>=` (mayor que o igualdad-permisiva), como en `a <= b`.
 
-   See "Values & Types" and Chapter 2.
-* Logical: `&&` (and), `||` (or), as in `a || b` that selects either `a` *or* `b`.
+   Consulta "Valores & Tipos" y el Capítulo 2.
+* Lógicos: `&&` (y), `||` (o), como en `a || b` que selecciona ya sea `a` *o* `b`.
 
-   These operators are used to express compound conditionals (see "Conditionals"), like if either `a` *or* `b` is true.
+   Estos operadores se utilizan para expresar condicionales compuestos (ver "Condicionales"), como si `a` *o* `b` es verdadero.
 
-**Note:** For much more detail, and coverage of operators not mentioned here, see the Mozilla Developer Network (MDN)'s "Expressions and Operators" (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators).
+**Nota:** Para obtener más detalles, y cobertura de los operadores que no se mencionan aquí, consulta "Expresiones y operadores" de Mozilla Developer Network (MDN) (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators).
 
-## Values & Types
+## Valores & Tipos
 
-If you ask an employee at a phone store how much a certain phone costs, and they say "ninety-nine, ninety-nine" (i.e., $99.99), they're giving you an actual numeric dollar figure that represents what you'll need to pay (plus taxes) to buy it. If you want to buy two of those phones, you can easily do the mental math to double that value to get $199.98 for your base cost.
+Si le preguntas a un empleado de una tienda de teléfonos cuánto cuesta cierto teléfono, y dicen "noventa y nueve con noventa y nueve" (es decir, $99.99), te están dando una cifra real numérica en dólares que representa lo que necesitas pagar (más impuestos) para comprarlo. Si deseas comprar dos de esos teléfonos, facilmente puedes hacer los cálculos mentales para duplicar ese valor y obtener $199.98 como su costo base.
 
-If that same employee picks up another similar phone but says it's "free" (perhaps with air quotes), they're not giving you a number, but instead another kind of representation of your expected cost ($0.00) -- the word "free."
+Si ese mismo empleado toma otro teléfono similar pero dice que es "gratis" (quizás haciendo comillas con sus manos), no te estan dando un número, sino otro tipo de representación del costo esperado ($0.00) -- la palabra "gratis."
 
-When you later ask if the phone includes a charger, that answer could only have been either "yes" or "no."
+Cuando más tarde le preguntes si el teléfono incluye un cargador, esa respuesta solo podría haber sido "sí" o "no".
 
-In very similar ways, when you express values in a program, you choose different representations for those values based on what you plan to do with them.
+De maneras muy similares, cuando expresas valores en un programa, eliges diferentes representaciones para esos valores en función de lo que planeas hacer con ellos.
 
-These different representations for values are called *types* in programming terminology. JavaScript has built-in types for each of these so called *primitive* values:
+Estas diferentes representaciones para los valores se llaman *tipos* en la terminología de la programación. JavaScript tiene tipos incorporados para cada uno de estos llamados valores *primitivos*:
 
-* When you need to do math, you want a `number`.
-* When you need to print a value on the screen, you need a `string` (one or more characters, words, sentences).
-* When you need to make a decision in your program, you need a `boolean` (`true` or `false`).
+* Cuando necesites hacer matemáticas, quieres un `number` ("número" en español).
+* Cuando necesites imprimir un valor en la pantalla, necesitarás un `string` (uno o más caracteres, palabras, oraciones).
+* Cuando necesites tomar una decisión en tu programa, necesitas un `boolean`: `true` o `false` ("verdadero" o "falso", respectivamente).
 
-Values that are included directly in the source code are called *literals*. `string` literals are surrounded by double quotes `"..."` or single quotes (`'...'`) -- the only difference is stylistic preference. `number` and `boolean` literals are just presented as is (i.e., `42`, `true`, etc.).
+Los valores que son incluidos directamente en el código fuente se llaman *literales*. Los literales `string` están rodeados por comillas dobles `"..."` o comillas simples (`'...'`) -- la única diferencia es la preferencia estilística. Los literales `number` y `boolean` son presentados tal y como están (es decir, `42`, `true`, etc.).
 
-Consider:
+Considera:
 
 ```js
-"I am a string";
-'I am also a string';
+"Soy un string";
+'Yo tambien soy un string';
 
 42;
 
@@ -241,13 +241,13 @@ true;
 false;
 ```
 
-Beyond `string`/`number`/`boolean` value types, it's common for programming languages to provide *arrays*, *objects*, *functions*, and more. We'll cover much more about values and types throughout this chapter and the next.
+Más allá de los tipos de valores `string`/`number`/`boolean`, es común que los lenguajes de programación tambien proporcionen *arrays*, *objetos*, *funciones* y más. Cubriremos mucho más sobre valores y tipos a lo largo de este capítulo y el siguiente.
 
-### Converting Between Types
+### Conversión Entre Tipos
 
-If you have a `number` but need to print it on the screen, you need to convert the value to a `string`, and in JavaScript this conversion is called "coercion." Similarly, if someone enters a series of numeric characters into a form on an ecommerce page, that's a `string`, but if you need to then use that value to do math operations, you need to *coerce* it to a `number`.
+Si tienes un `número` pero necesitas imprimirlo en la pantalla, debes convertir el valor a un `string`, y en JavaScript esta conversión se llama "coerción". Del mismo modo, si alguien ingresa una serie de caracteres numéricos en un formulario de una página de ecommerce, eso es un `string`, pero si necesitas usar ese valor para hacer operaciones matemáticas, necesitaras hacer uso de la *coerción* para convertirlo a un `number`.
 
-JavaScript provides several different facilities for forcibly coercing between *types*. For example:
+JavaScript proporciona varias facilidades diferentes para forzar coerciones entre *tipos*. Por ejemplo:
 
 ```js
 var a = "42";
@@ -257,21 +257,21 @@ console.log( a );	// "42"
 console.log( b );	// 42
 ```
 
-Using `Number(..)` (a built-in function) as shown is an *explicit* coercion from any other type to the `number` type. That should be pretty straightforward.
+El uso de `Number(..)` (una función incorporada) como se muestra es una coerción *explícita* de cualquier otro tipo al tipo `number`. Eso debería ser bastante sencillo.
 
-But a controversial topic is what happens when you try to compare two values that are not already of the same type, which would require *implicit* coercion.
+Pero un tema controversial es lo que sucede cuando intentas comparar dos valores que ya no son del mismo tipo, lo que requeriría una coerción *implícita*.
 
-When comparing the string `"99.99"` to the number `99.99`, most people would agree they are equivalent. But they're not exactly the same, are they? It's the same value in two different representations, two different *types*. You could say they're "loosely equal," couldn't you?
+Al comparar el string `"99.99"` con el número `99.99`, la mayoría de la gente estaría de acuerdo en que son equivalentes. Pero no son exactamente lo mismo, verdad? Es el mismo valor en dos representaciones diferentes, dos *tipos* diferentes. Podrías decir que son "permisivamente iguales", no?
 
-To help you out in these common situations, JavaScript will sometimes kick in and *implicitly* coerce values to the matching types.
+Para ayudarte en estas situaciones comunes, JavaScript algunas veces se activará e *implícitamente* coaccionará los valores a los tipos que coincidan.
 
-So if you use the `==` loose equals operator to make the comparison `"99.99" == 99.99`, JavaScript will convert the left-hand side `"99.99"` to its `number` equivalent `99.99`. The comparison then becomes `99.99 == 99.99`, which is of course `true`.
+Entonces, si usas el operador permisivamente iguales `==` para hacer la comparación`"99.99" == 99.99`, JavaScript convertirá el lado izquierdo `"99.99"` a su `number` equivalente `99.99`. La comparación se convierte en `99.99 == 99.99`, lo que es, por supuesto, `true` ("verdadera").
 
-While designed to help you, implicit coercion can create confusion if you haven't taken the time to learn the rules that govern its behavior. Most JS developers never have, so the common feeling is that implicit coercion is confusing and harms programs with unexpected bugs, and should thus be avoided. It's even sometimes called a flaw in the design of the language.
+Si bien está diseñado para ayudarte, la coerción implícita puede crear confusión si no te has tomado el tiempo de aprender las reglas que rigen su comportamiento. La mayoría de los desarrolladores de JS nunca lo han hecho, por lo que la sensación común es que la coerción implícita es confusa y perjudica a los programas con errores inesperados, por lo que debe ser evitada. Incluso a veces es llamada un defecto en el diseño del lenguaje.
 
-However, implicit coercion is a mechanism that *can be learned*, and moreover *should be learned* by anyone wishing to take JavaScript programming seriously. Not only is it not confusing once you learn the rules, it can actually make your programs better! The effort is well worth it.
+Sin embargo, la coerción implícita es un mecanismo *que puede aprenderse* y, además, *debe ser aprendida* por cualquiera que desee tomar en serio la programación en JavaScript. No solo no es confusa una vez que aprendas las reglas, sino que tambien puede mejorar tus programas. El esfuerzo bien vale la pena.
 
-**Note:** For more information on coercion, see Chapter 2 of this title and Chapter 4 of the *Types & Grammar* title of this series.
+**Nota:** Para obtener más información sobre la coerción, consulta el Capítulo 2 de este título y el Capítulo 4 del título *Tipos & Gramatica* de esta serie.
 
 ## Code Comments
 
